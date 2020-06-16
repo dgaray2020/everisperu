@@ -1,0 +1,386 @@
+[0m[1mRefreshing Terraform state in-memory prior to plan...[0m
+The refreshed state will be used to calculate this plan, but will not be
+persisted to local or remote state storage.
+[0m
+
+------------------------------------------------------------------------
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  [32m+[0m create
+[0m
+Terraform will perform the following actions:
+
+[1m  # module.gke.google_container_cluster.gke-kubernetes[0m will be created[0m[0m
+[0m  [32m+[0m[0m resource "google_container_cluster" "gke-kubernetes" {
+      [32m+[0m [0m[1m[0madditional_zones[0m[0m            = (known after apply)
+      [32m+[0m [0m[1m[0mcluster_ipv4_cidr[0m[0m           = (known after apply)
+      [32m+[0m [0m[1m[0mdefault_max_pods_per_node[0m[0m   = (known after apply)
+      [32m+[0m [0m[1m[0menable_binary_authorization[0m[0m = false
+      [32m+[0m [0m[1m[0menable_intranode_visibility[0m[0m = (known after apply)
+      [32m+[0m [0m[1m[0menable_kubernetes_alpha[0m[0m     = false
+      [32m+[0m [0m[1m[0menable_legacy_abac[0m[0m          = false
+      [32m+[0m [0m[1m[0menable_shielded_nodes[0m[0m       = false
+      [32m+[0m [0m[1m[0menable_tpu[0m[0m                  = (known after apply)
+      [32m+[0m [0m[1m[0mendpoint[0m[0m                    = (known after apply)
+      [32m+[0m [0m[1m[0mid[0m[0m                          = (known after apply)
+      [32m+[0m [0m[1m[0minitial_node_count[0m[0m          = 1
+      [32m+[0m [0m[1m[0minstance_group_urls[0m[0m         = (known after apply)
+      [32m+[0m [0m[1m[0mlabel_fingerprint[0m[0m           = (known after apply)
+      [32m+[0m [0m[1m[0mlocation[0m[0m                    = "us-east4-a"
+      [32m+[0m [0m[1m[0mlogging_service[0m[0m             = "logging.googleapis.com/kubernetes"
+      [32m+[0m [0m[1m[0mmaster_version[0m[0m              = (known after apply)
+      [32m+[0m [0m[1m[0mmin_master_version[0m[0m          = "1.13.7-gke.24"
+      [32m+[0m [0m[1m[0mmonitoring_service[0m[0m          = "monitoring.googleapis.com/kubernetes"
+      [32m+[0m [0m[1m[0mname[0m[0m                        = "default-everisperu-course-gke"
+      [32m+[0m [0m[1m[0mnetwork[0m[0m                     = (known after apply)
+      [32m+[0m [0m[1m[0mnode_locations[0m[0m              = (known after apply)
+      [32m+[0m [0m[1m[0mnode_version[0m[0m                = (known after apply)
+      [32m+[0m [0m[1m[0moperation[0m[0m                   = (known after apply)
+      [32m+[0m [0m[1m[0mproject[0m[0m                     = (known after apply)
+      [32m+[0m [0m[1m[0mregion[0m[0m                      = (known after apply)
+      [32m+[0m [0m[1m[0mremove_default_node_pool[0m[0m    = true
+      [32m+[0m [0m[1m[0mservices_ipv4_cidr[0m[0m          = (known after apply)
+      [32m+[0m [0m[1m[0msubnetwork[0m[0m                  = (known after apply)
+      [32m+[0m [0m[1m[0mzone[0m[0m                        = (known after apply)
+
+      [32m+[0m [0maddons_config {
+          [32m+[0m [0mcloudrun_config {
+              [32m+[0m [0m[1m[0mdisabled[0m[0m = (known after apply)
+            }
+
+          [32m+[0m [0mhorizontal_pod_autoscaling {
+              [32m+[0m [0m[1m[0mdisabled[0m[0m = (known after apply)
+            }
+
+          [32m+[0m [0mhttp_load_balancing {
+              [32m+[0m [0m[1m[0mdisabled[0m[0m = false
+            }
+
+          [32m+[0m [0mkubernetes_dashboard {
+              [32m+[0m [0m[1m[0mdisabled[0m[0m = (known after apply)
+            }
+
+          [32m+[0m [0mnetwork_policy_config {
+              [32m+[0m [0m[1m[0mdisabled[0m[0m = (known after apply)
+            }
+        }
+
+      [32m+[0m [0mauthenticator_groups_config {
+          [32m+[0m [0m[1m[0msecurity_group[0m[0m = (known after apply)
+        }
+
+      [32m+[0m [0mcluster_autoscaling {
+          [32m+[0m [0m[1m[0menabled[0m[0m = (known after apply)
+
+          [32m+[0m [0mauto_provisioning_defaults {
+              [32m+[0m [0m[1m[0moauth_scopes[0m[0m    = (known after apply)
+              [32m+[0m [0m[1m[0mservice_account[0m[0m = (known after apply)
+            }
+
+          [32m+[0m [0mresource_limits {
+              [32m+[0m [0m[1m[0mmaximum[0m[0m       = (known after apply)
+              [32m+[0m [0m[1m[0mminimum[0m[0m       = (known after apply)
+              [32m+[0m [0m[1m[0mresource_type[0m[0m = (known after apply)
+            }
+        }
+
+      [32m+[0m [0mip_allocation_policy {
+          [32m+[0m [0m[1m[0mcluster_ipv4_cidr_block[0m[0m       = (known after apply)
+          [32m+[0m [0m[1m[0mcluster_secondary_range_name[0m[0m  = (known after apply)
+          [32m+[0m [0m[1m[0mnode_ipv4_cidr_block[0m[0m          = (known after apply)
+          [32m+[0m [0m[1m[0mservices_ipv4_cidr_block[0m[0m      = (known after apply)
+          [32m+[0m [0m[1m[0mservices_secondary_range_name[0m[0m = (known after apply)
+          [32m+[0m [0m[1m[0msubnetwork_name[0m[0m               = (known after apply)
+        }
+
+      [32m+[0m [0mmaintenance_policy {
+          [32m+[0m [0mdaily_maintenance_window {
+              [32m+[0m [0m[1m[0mduration[0m[0m   = (known after apply)
+              [32m+[0m [0m[1m[0mstart_time[0m[0m = "04:30"
+            }
+        }
+
+      [32m+[0m [0mmaster_auth {
+          [32m+[0m [0m[1m[0mclient_certificate[0m[0m     = (known after apply)
+          [32m+[0m [0m[1m[0mclient_key[0m[0m             = (sensitive value)
+          [32m+[0m [0m[1m[0mcluster_ca_certificate[0m[0m = (known after apply)
+
+          [32m+[0m [0mclient_certificate_config {
+              [32m+[0m [0m[1m[0missue_client_certificate[0m[0m = false
+            }
+        }
+
+      [32m+[0m [0mmaster_authorized_networks_config {
+          [32m+[0m [0mcidr_blocks {
+              [32m+[0m [0m[1m[0mcidr_block[0m[0m   = "0.0.0.0/0"
+              [32m+[0m [0m[1m[0mdisplay_name[0m[0m = "All"
+            }
+        }
+
+      [32m+[0m [0mnetwork_policy {
+          [32m+[0m [0m[1m[0menabled[0m[0m  = (known after apply)
+          [32m+[0m [0m[1m[0mprovider[0m[0m = (known after apply)
+        }
+
+      [32m+[0m [0mnode_config {
+          [32m+[0m [0m[1m[0mdisk_size_gb[0m[0m      = 20
+          [32m+[0m [0m[1m[0mdisk_type[0m[0m         = "pd-standard"
+          [32m+[0m [0m[1m[0mguest_accelerator[0m[0m = (known after apply)
+          [32m+[0m [0m[1m[0mimage_type[0m[0m        = (known after apply)
+          [32m+[0m [0m[1m[0mlabels[0m[0m            = (known after apply)
+          [32m+[0m [0m[1m[0mlocal_ssd_count[0m[0m   = (known after apply)
+          [32m+[0m [0m[1m[0mmachine_type[0m[0m      = "custom-4-8192"
+          [32m+[0m [0m[1m[0mmetadata[0m[0m          = {
+              [32m+[0m [0m"disable-legacy-endpoints" = "true"
+            }
+          [32m+[0m [0m[1m[0moauth_scopes[0m[0m      = [
+              [32m+[0m [0m"https://www.googleapis.com/auth/devstorage.read_only",
+              [32m+[0m [0m"https://www.googleapis.com/auth/logging.write",
+              [32m+[0m [0m"https://www.googleapis.com/auth/monitoring",
+              [32m+[0m [0m"https://www.googleapis.com/auth/monitoring.write",
+            ]
+          [32m+[0m [0m[1m[0mpreemptible[0m[0m       = true
+          [32m+[0m [0m[1m[0mservice_account[0m[0m   = (known after apply)
+          [32m+[0m [0m[1m[0mtaint[0m[0m             = (known after apply)
+
+          [32m+[0m [0msandbox_config {
+              [32m+[0m [0m[1m[0msandbox_type[0m[0m = (known after apply)
+            }
+
+          [32m+[0m [0mshielded_instance_config {
+              [32m+[0m [0m[1m[0menable_integrity_monitoring[0m[0m = (known after apply)
+              [32m+[0m [0m[1m[0menable_secure_boot[0m[0m          = (known after apply)
+            }
+
+          [32m+[0m [0mworkload_metadata_config {
+              [32m+[0m [0m[1m[0mnode_metadata[0m[0m = (known after apply)
+            }
+        }
+
+      [32m+[0m [0mnode_pool {
+          [32m+[0m [0m[1m[0minitial_node_count[0m[0m  = (known after apply)
+          [32m+[0m [0m[1m[0minstance_group_urls[0m[0m = (known after apply)
+          [32m+[0m [0m[1m[0mmax_pods_per_node[0m[0m   = (known after apply)
+          [32m+[0m [0m[1m[0mname[0m[0m                = (known after apply)
+          [32m+[0m [0m[1m[0mname_prefix[0m[0m         = (known after apply)
+          [32m+[0m [0m[1m[0mnode_count[0m[0m          = (known after apply)
+          [32m+[0m [0m[1m[0mnode_locations[0m[0m      = (known after apply)
+          [32m+[0m [0m[1m[0mversion[0m[0m             = (known after apply)
+
+          [32m+[0m [0mautoscaling {
+              [32m+[0m [0m[1m[0mmax_node_count[0m[0m = (known after apply)
+              [32m+[0m [0m[1m[0mmin_node_count[0m[0m = (known after apply)
+            }
+
+          [32m+[0m [0mmanagement {
+              [32m+[0m [0m[1m[0mauto_repair[0m[0m  = (known after apply)
+              [32m+[0m [0m[1m[0mauto_upgrade[0m[0m = (known after apply)
+            }
+
+          [32m+[0m [0mnode_config {
+              [32m+[0m [0m[1m[0mdisk_size_gb[0m[0m      = (known after apply)
+              [32m+[0m [0m[1m[0mdisk_type[0m[0m         = (known after apply)
+              [32m+[0m [0m[1m[0mguest_accelerator[0m[0m = (known after apply)
+              [32m+[0m [0m[1m[0mimage_type[0m[0m        = (known after apply)
+              [32m+[0m [0m[1m[0mlabels[0m[0m            = (known after apply)
+              [32m+[0m [0m[1m[0mlocal_ssd_count[0m[0m   = (known after apply)
+              [32m+[0m [0m[1m[0mmachine_type[0m[0m      = (known after apply)
+              [32m+[0m [0m[1m[0mmetadata[0m[0m          = (known after apply)
+              [32m+[0m [0m[1m[0mmin_cpu_platform[0m[0m  = (known after apply)
+              [32m+[0m [0m[1m[0moauth_scopes[0m[0m      = (known after apply)
+              [32m+[0m [0m[1m[0mpreemptible[0m[0m       = (known after apply)
+              [32m+[0m [0m[1m[0mservice_account[0m[0m   = (known after apply)
+              [32m+[0m [0m[1m[0mtags[0m[0m              = (known after apply)
+              [32m+[0m [0m[1m[0mtaint[0m[0m             = (known after apply)
+
+              [32m+[0m [0msandbox_config {
+                  [32m+[0m [0m[1m[0msandbox_type[0m[0m = (known after apply)
+                }
+
+              [32m+[0m [0mshielded_instance_config {
+                  [32m+[0m [0m[1m[0menable_integrity_monitoring[0m[0m = (known after apply)
+                  [32m+[0m [0m[1m[0menable_secure_boot[0m[0m          = (known after apply)
+                }
+
+              [32m+[0m [0mworkload_metadata_config {
+                  [32m+[0m [0m[1m[0mnode_metadata[0m[0m = (known after apply)
+                }
+            }
+
+          [32m+[0m [0mupgrade_settings {
+              [32m+[0m [0m[1m[0mmax_surge[0m[0m       = (known after apply)
+              [32m+[0m [0m[1m[0mmax_unavailable[0m[0m = (known after apply)
+            }
+        }
+
+      [32m+[0m [0mpod_security_policy_config {
+          [32m+[0m [0m[1m[0menabled[0m[0m = (known after apply)
+        }
+
+      [32m+[0m [0mprivate_cluster_config {
+          [32m+[0m [0m[1m[0menable_private_nodes[0m[0m   = true
+          [32m+[0m [0m[1m[0mmaster_ipv4_cidr_block[0m[0m = "172.16.0.16/28"
+          [32m+[0m [0m[1m[0mpeering_name[0m[0m           = (known after apply)
+          [32m+[0m [0m[1m[0mprivate_endpoint[0m[0m       = (known after apply)
+          [32m+[0m [0m[1m[0mpublic_endpoint[0m[0m        = (known after apply)
+        }
+    }
+
+[1m  # module.gke.google_container_node_pool.gke_node_pool[0][0m will be created[0m[0m
+[0m  [32m+[0m[0m resource "google_container_node_pool" "gke_node_pool" {
+      [32m+[0m [0m[1m[0mcluster[0m[0m             = "default-everisperu-course-gke"
+      [32m+[0m [0m[1m[0mid[0m[0m                  = (known after apply)
+      [32m+[0m [0m[1m[0minitial_node_count[0m[0m  = (known after apply)
+      [32m+[0m [0m[1m[0minstance_group_urls[0m[0m = (known after apply)
+      [32m+[0m [0m[1m[0mlocation[0m[0m            = "us-east4-a"
+      [32m+[0m [0m[1m[0mmax_pods_per_node[0m[0m   = (known after apply)
+      [32m+[0m [0m[1m[0mname[0m[0m                = "default-everisperu-course-pool-0"
+      [32m+[0m [0m[1m[0mname_prefix[0m[0m         = (known after apply)
+      [32m+[0m [0m[1m[0mnode_count[0m[0m          = 1
+      [32m+[0m [0m[1m[0mnode_locations[0m[0m      = (known after apply)
+      [32m+[0m [0m[1m[0mproject[0m[0m             = (known after apply)
+      [32m+[0m [0m[1m[0mregion[0m[0m              = (known after apply)
+      [32m+[0m [0m[1m[0mversion[0m[0m             = (known after apply)
+      [32m+[0m [0m[1m[0mzone[0m[0m                = (known after apply)
+
+      [32m+[0m [0mautoscaling {
+          [32m+[0m [0m[1m[0mmax_node_count[0m[0m = 4
+          [32m+[0m [0m[1m[0mmin_node_count[0m[0m = 1
+        }
+
+      [32m+[0m [0mmanagement {
+          [32m+[0m [0m[1m[0mauto_repair[0m[0m  = false
+          [32m+[0m [0m[1m[0mauto_upgrade[0m[0m = true
+        }
+
+      [32m+[0m [0mnode_config {
+          [32m+[0m [0m[1m[0mdisk_size_gb[0m[0m      = 20
+          [32m+[0m [0m[1m[0mdisk_type[0m[0m         = "pd-standard"
+          [32m+[0m [0m[1m[0mguest_accelerator[0m[0m = (known after apply)
+          [32m+[0m [0m[1m[0mimage_type[0m[0m        = (known after apply)
+          [32m+[0m [0m[1m[0mlabels[0m[0m            = (known after apply)
+          [32m+[0m [0m[1m[0mlocal_ssd_count[0m[0m   = (known after apply)
+          [32m+[0m [0m[1m[0mmachine_type[0m[0m      = "custom-4-8192"
+          [32m+[0m [0m[1m[0mmetadata[0m[0m          = {
+              [32m+[0m [0m"disable-legacy-endpoints" = "true"
+            }
+          [32m+[0m [0m[1m[0moauth_scopes[0m[0m      = [
+              [32m+[0m [0m"https://www.googleapis.com/auth/devstorage.read_only",
+              [32m+[0m [0m"https://www.googleapis.com/auth/logging.write",
+              [32m+[0m [0m"https://www.googleapis.com/auth/monitoring",
+              [32m+[0m [0m"https://www.googleapis.com/auth/monitoring.write",
+            ]
+          [32m+[0m [0m[1m[0mpreemptible[0m[0m       = true
+          [32m+[0m [0m[1m[0mservice_account[0m[0m   = (known after apply)
+          [32m+[0m [0m[1m[0mtaint[0m[0m             = (known after apply)
+
+          [32m+[0m [0msandbox_config {
+              [32m+[0m [0m[1m[0msandbox_type[0m[0m = (known after apply)
+            }
+
+          [32m+[0m [0mshielded_instance_config {
+              [32m+[0m [0m[1m[0menable_integrity_monitoring[0m[0m = (known after apply)
+              [32m+[0m [0m[1m[0menable_secure_boot[0m[0m          = (known after apply)
+            }
+
+          [32m+[0m [0mworkload_metadata_config {
+              [32m+[0m [0m[1m[0mnode_metadata[0m[0m = (known after apply)
+            }
+        }
+
+      [32m+[0m [0mupgrade_settings {
+          [32m+[0m [0m[1m[0mmax_surge[0m[0m       = (known after apply)
+          [32m+[0m [0m[1m[0mmax_unavailable[0m[0m = (known after apply)
+        }
+    }
+
+[1m  # module.subnet.google_compute_router.gcr-router[0m will be created[0m[0m
+[0m  [32m+[0m[0m resource "google_compute_router" "gcr-router" {
+      [32m+[0m [0m[1m[0mcreation_timestamp[0m[0m = (known after apply)
+      [32m+[0m [0m[1m[0mid[0m[0m                 = (known after apply)
+      [32m+[0m [0m[1m[0mname[0m[0m               = "default-everisperu-course-gcr-router"
+      [32m+[0m [0m[1m[0mnetwork[0m[0m            = (known after apply)
+      [32m+[0m [0m[1m[0mproject[0m[0m            = (known after apply)
+      [32m+[0m [0m[1m[0mregion[0m[0m             = "us-east4"
+      [32m+[0m [0m[1m[0mself_link[0m[0m          = (known after apply)
+
+      [32m+[0m [0mbgp {
+          [32m+[0m [0m[1m[0madvertise_mode[0m[0m = "DEFAULT"
+          [32m+[0m [0m[1m[0masn[0m[0m            = 64514
+        }
+    }
+
+[1m  # module.subnet.google_compute_router_nat.gcrn-nat[0m will be created[0m[0m
+[0m  [32m+[0m[0m resource "google_compute_router_nat" "gcrn-nat" {
+      [32m+[0m [0m[1m[0micmp_idle_timeout_sec[0m[0m              = 30
+      [32m+[0m [0m[1m[0mid[0m[0m                                 = (known after apply)
+      [32m+[0m [0m[1m[0mname[0m[0m                               = "default-everisperu-course-gcrn-nat"
+      [32m+[0m [0m[1m[0mnat_ip_allocate_option[0m[0m             = "AUTO_ONLY"
+      [32m+[0m [0m[1m[0mproject[0m[0m                            = (known after apply)
+      [32m+[0m [0m[1m[0mregion[0m[0m                             = "us-east4"
+      [32m+[0m [0m[1m[0mrouter[0m[0m                             = "default-everisperu-course-gcr-router"
+      [32m+[0m [0m[1m[0msource_subnetwork_ip_ranges_to_nat[0m[0m = "LIST_OF_SUBNETWORKS"
+      [32m+[0m [0m[1m[0mtcp_established_idle_timeout_sec[0m[0m   = 1200
+      [32m+[0m [0m[1m[0mtcp_transitory_idle_timeout_sec[0m[0m    = 30
+      [32m+[0m [0m[1m[0mudp_idle_timeout_sec[0m[0m               = 30
+
+      [32m+[0m [0msubnetwork {
+          [32m+[0m [0m[1m[0mname[0m[0m                     = (known after apply)
+          [32m+[0m [0m[1m[0msecondary_ip_range_names[0m[0m = []
+          [32m+[0m [0m[1m[0msource_ip_ranges_to_nat[0m[0m  = [
+              [32m+[0m [0m"ALL_IP_RANGES",
+            ]
+        }
+    }
+
+[1m  # module.subnet.google_compute_subnetwork.subnet-private[0m will be created[0m[0m
+[0m  [32m+[0m[0m resource "google_compute_subnetwork" "subnet-private" {
+      [32m+[0m [0m[1m[0mcreation_timestamp[0m[0m = (known after apply)
+      [32m+[0m [0m[1m[0menable_flow_logs[0m[0m   = (known after apply)
+      [32m+[0m [0m[1m[0mfingerprint[0m[0m        = (known after apply)
+      [32m+[0m [0m[1m[0mgateway_address[0m[0m    = (known after apply)
+      [32m+[0m [0m[1m[0mid[0m[0m                 = (known after apply)
+      [32m+[0m [0m[1m[0mip_cidr_range[0m[0m      = "10.10.1.0/24"
+      [32m+[0m [0m[1m[0mname[0m[0m               = "default-everisperu-course-subnet-private"
+      [32m+[0m [0m[1m[0mnetwork[0m[0m            = (known after apply)
+      [32m+[0m [0m[1m[0mproject[0m[0m            = (known after apply)
+      [32m+[0m [0m[1m[0mregion[0m[0m             = "us-east4"
+      [32m+[0m [0m[1m[0msecondary_ip_range[0m[0m = (known after apply)
+      [32m+[0m [0m[1m[0mself_link[0m[0m          = (known after apply)
+    }
+
+[1m  # module.vpc.google_compute_network.gcn-vpc[0m will be created[0m[0m
+[0m  [32m+[0m[0m resource "google_compute_network" "gcn-vpc" {
+      [32m+[0m [0m[1m[0mauto_create_subnetworks[0m[0m         = false
+      [32m+[0m [0m[1m[0mdelete_default_routes_on_create[0m[0m = false
+      [32m+[0m [0m[1m[0mgateway_ipv4[0m[0m                    = (known after apply)
+      [32m+[0m [0m[1m[0mid[0m[0m                              = (known after apply)
+      [32m+[0m [0m[1m[0mipv4_range[0m[0m                      = (known after apply)
+      [32m+[0m [0m[1m[0mname[0m[0m                            = "default-everisperu-course-gcn-vpc"
+      [32m+[0m [0m[1m[0mproject[0m[0m                         = (known after apply)
+      [32m+[0m [0m[1m[0mrouting_mode[0m[0m                    = "REGIONAL"
+      [32m+[0m [0m[1m[0mself_link[0m[0m                       = (known after apply)
+    }
+
+[0m[1mPlan:[0m 6 to add, 0 to change, 0 to destroy.[0m
+[33m
+[1m[33mWarning: [0m[0m[1mQuoted references are deprecated[0m
+
+[0m  on .terraform/modules/gke/kubernetes.tf line 2, in resource "google_container_cluster" "gke-kubernetes":
+   2:   provider            = [4m"google"[0m
+[0m
+In this context, references are expected literally rather than in quotes.
+Terraform 0.11 and earlier required quotes, but quoted references are now
+deprecated and will be removed in a future version of Terraform. Remove the
+quotes surrounding this reference to silence this warning.
+
+(and one more similar warning elsewhere)
+[0m[0m
+
+------------------------------------------------------------------------
+
+Note: You didn't specify an "-out" parameter to save this plan, so Terraform
+can't guarantee that exactly these actions will be performed if
+"terraform apply" is subsequently run.
+
